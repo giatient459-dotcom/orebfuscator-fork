@@ -66,18 +66,19 @@ public class Orebfuscator extends JavaPlugin implements Listener, OrebfuscatorCo
   public void onLoad() {
     OfcLogger.setLogger(new BukkitLoggerAccessor(getLogger()));
     this.orebfuscatorVersion = Version.parse(getDescription().getVersion());
+    OfcLogger.info("§eĐang tải Orebfuscator...");
   }
 
   @Override
   public void onEnable() {
     try {
       if (MinecraftVersion.isBelow("1.16")) {
-        throw new RuntimeException("Orebfuscator only supports minecraft 1.16 and above");
+        throw new RuntimeException("Orebfuscator chỉ hỗ trợ Minecraft 1.16 trở lên");
       }
 
       Plugin protocolLib = getServer().getPluginManager().getPlugin("ProtocolLib");
       if (protocolLib == null || !protocolLib.isEnabled()) {
-        throw new RuntimeException("ProtocolLib can't be found or is disabled! Orebfuscator can't be enabled.");
+        throw new RuntimeException("Không tìm thấy ProtocolLib hoặc đã bị tắt! Không thể bật Orebfuscator.");
       }
 
       this.statisticsRegistry = new StatisticsRegistry();
@@ -119,8 +120,10 @@ public class Orebfuscator extends JavaPlugin implements Listener, OrebfuscatorCo
 
       // add commands
       getCommand("orebfuscator").setExecutor(new OrebfuscatorCommand(this));
+      
+      OfcLogger.info("§aOrebfuscator đã được bật thành công!");
     } catch (Exception e) {
-      OfcLogger.error("An error occurred while enabling plugin", e);
+      OfcLogger.error("§cĐã xảy ra lỗi khi bật plugin", e);
 
       this.getServer().getPluginManager().registerEvent(PluginEnableEvent.class, this, EventPriority.NORMAL,
           this::onEnableFailed, this);
@@ -148,6 +151,7 @@ public class Orebfuscator extends JavaPlugin implements Listener, OrebfuscatorCo
     OrebfuscatorCompatibility.close();
 
     this.config = null;
+    OfcLogger.info("§cOrebfuscator đã được tắt!");
   }
 
   public void onEnableFailed(Listener listener, Event event) {
