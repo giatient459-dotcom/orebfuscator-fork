@@ -20,17 +20,27 @@ include "orebfuscator-bukkit:orebfuscator-bukkit-compatibility:orebfuscator-bukk
 include "orebfuscator-bukkit:orebfuscator-bukkit-compatibility:orebfuscator-bukkit-compatibility-paper"
 include "orebfuscator-bukkit:orebfuscator-bukkit-compatibility:orebfuscator-bukkit-compatibility-folia"
 include "orebfuscator-bukkit:orebfuscator-bukkit-nms"
-include "orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_16_R3"
-include "orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_17_R1"
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_18_R1'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_18_R2'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R1'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R2'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R3'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R1'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R2'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R3'
-include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R4'
+
+// ============================================
+// COMMENT CÁC NMS CŨ (1.16 - 1.20)
+// Chỉ giữ 1.21 và v26.1 cho Paper
+// ============================================
+
+// include "orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_16_R3"
+// include "orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_17_R1"
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_18_R1'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_18_R2'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R1'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R2'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_19_R3'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R1'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R2'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R3'
+// include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_20_R4'
+
+// ============================================
+// GIỮ NMS 1.21 (cho Paper 1.21)
+// ============================================
 include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_21_R1'
 include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_21_R2'
 include 'orebfuscator-bukkit:orebfuscator-bukkit-nms:orebfuscator-bukkit-nms-v1_21_R3'
